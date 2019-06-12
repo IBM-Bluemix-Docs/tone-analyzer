@@ -9,7 +9,7 @@ subcollection: tone-analyzer
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
@@ -43,14 +43,14 @@ The service offers two endpoints:
 
     Use the {{site.data.keyword.toneanalyzershort}} general-purpose endpoint to analyze shorter web data, such as email messages or tweets, or longer documents, such as articles or blog posts. Monitor social media to understand what customers are saying about a brand and to determine whom to target with specific messaging. The endpoint accepts JSON, plain text, or HTML input. For more information about the method and the tones that it returns, see [Using the general-purpose endpoint](/docs/services/tone-analyzer?topic=tone-analyzer-utgpe).
 
-    The [general-purpose demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://tone-analyzer-demo.ng.bluemix.net/){: new_window} submits content to the service for analysis. The service returns overall and sentence-level analyses of the tone of the content.
+    The [general-purpose demo](https://tone-analyzer-demo.ng.bluemix.net/){: external} submits content to the service for analysis. The service returns overall and sentence-level analyses of the tone of the content.
 -   **Customer-engagement endpoint** (`POST /v3/tone_chat`)
 
     Use the {{site.data.keyword.toneanalyzershort}} customer-engagement endpoint to monitor customer service and support conversations. Escalate customer conversations when they turn sour or find opportunities to improve customer service scripts, dialog strategies, and customer journeys. The endpoint accepts JSON input. For more information about the method and the tones that it returns, see [Using the customer-engagement endpoint](/docs/services/tone-analyzer?topic=tone-analyzer-utco).
 
-    The [customer-engagement demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://customer-engagement-demo.ng.bluemix.net/){: new_window} analyzes conversations between customers and customer service agents. The service measures customer satisfaction and concerns, and assesses agent performance, so that you can gauge how the interaction evolves.
+    The [customer-engagement demo](https://customer-engagement-demo.ng.bluemix.net/){: external} analyzes conversations between customers and customer service agents. The service measures customer satisfaction and concerns, and assesses agent performance, so that you can gauge how the interaction evolves.
 
-For more information about the pricing plans available for the service, see the {{site.data.keyword.toneanalyzershort}} service in the [{{site.data.keyword.cloud_notm}} Catalog ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/catalog/services/tone-analyzer){: new_window}.
+For more information about the pricing plans available for the service, see the {{site.data.keyword.toneanalyzershort}} service in the [{{site.data.keyword.cloud_notm}} Catalog](https://{DomainName}/catalog/services/tone-analyzer){: external}.
 
 ## Use cases
 {: #iuc}
@@ -62,9 +62,9 @@ Some interesting use cases of the service are
 -   *Chat bots* - Enable an automated agent to detect customer tones and craft suitable responses. For example, you might respond to sadness with "I'm sorry you are upset about this problem" or to satisfaction with "I'm glad you are satisfied with our service." (Customer-engagement endpoint)
 -   *Customer-engagement monitoring and quality assurance* - Monitor the overall tone of agent and customer communications, detect anomalies, and highlight opportunities to train agents on how to better communicate. (Customer-engagement endpoint)
 
-You can also use the {{site.data.keyword.toneanalyzershort}} service to analyze user input with other {{site.data.keyword.ibmwatson}} services such as [{{site.data.keyword.conversationfull}}](https://{DomainName}/docs/services/conversation/index.html) or [{{site.data.keyword.speechtotextfull}}](https://{DomainName}/docs/services/speech-to-text/index.html). For instance, the [Conversation Food Coach ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://food-coach.ng.bluemix.net/){: new_window} application uses the {{site.data.keyword.conversationshort}} service to coach users to make healthy food choices based on their responses about the food that they eat. For more information, see this [{{site.data.keyword.watson}} blog post ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://developer.ibm.com/watson/blog/2016/10/17/creating-a-compassionate-conversational-agent-using-watson-tone-analyzer-and-watson-conversation-services/){: new_window}.
+You can also use the {{site.data.keyword.toneanalyzershort}} service to analyze user input with other {{site.data.keyword.ibmwatson}} services such as [{{site.data.keyword.conversationfull}}](https://{DomainName}/docs/services/conversation/index.html){: external} or [{{site.data.keyword.speechtotextfull}}](https://{DomainName}/docs/services/speech-to-text/index.html){: external}. For instance, the [Conversation Food Coach](https://food-coach.ng.bluemix.net/){: external} application uses the {{site.data.keyword.conversationshort}} service to coach users to make healthy food choices based on their responses about the food that they eat. For more information, see this [{{site.data.keyword.watson}} blog post](https://developer.ibm.com/watson/blog/2016/10/17/creating-a-compassionate-conversational-agent-using-watson-tone-analyzer-and-watson-conversation-services/){: external}.
 
-The {{site.data.keyword.toneanalyzershort}} service algorithmically calculates the tone of written text. It does not infer the personality characteristics of the author of the text. To obtain a personality portrait, see the [{{site.data.keyword.personalityinsightsfull}} service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/docs/services/personality-insights/index.html){: new_window}.
+The {{site.data.keyword.toneanalyzershort}} service algorithmically calculates the tone of written text. It does not infer the personality characteristics of the author of the text. To obtain a personality portrait, see the [{{site.data.keyword.personalityinsightsfull}} service](https://{DomainName}/docs/services/personality-insights/index.html){: external}.
 {: note}
 
 ## Language support

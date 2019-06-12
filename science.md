@@ -2,14 +2,14 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-07"
+lastupdated: "2019-06-06"
 
 subcollection: tone-analyzer
 
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
@@ -65,7 +65,7 @@ IBM measured the quality of the {{site.data.keyword.toneanalyzershort}} service 
 -   *Emotional tone* categories were benchmarked against standard emotion data sets such as ISEAR and SEMEVAL. Results show that the average performance of the ensemble model (macro-average F1 score is around 41 percent and 68 percent for the two data sets) is statistically better than the best reported accuracy of the state-of-the-art models (macro-average F1 scores are around 37 percent and 63 percent).
 -   *Language tone* was evaluated with an in-depth study of more than two hundred thousand sentences that were collected from sources such as debate forums, speeches, and social media. IBM randomly selected 1330 of the sentences for analytical tone and 1000 sentences for each of confident and tentative tones. IBM then submitted the sentences to the {{site.data.keyword.toneanalyzershort}} service and also asked humans to analyze them.
 
-    For the human analysis, IBM used a crowd-sourcing platform that is called [CrowdFlower ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.crowdflower.com/){: new_window} to annotate the selected sentences with different labels. Only raters with approval ratings over 85 percent were allowed to participate in the annotation tasks. Five annotators labeled each sentence, and IBM used the most prevalent of the five annotated results to determine the final labels.
+    For the human analysis, IBM used a crowd-sourcing platform that is called [Figure Eight](https://www.figure-eight.com/){: external} to annotate the selected sentences with different labels. Only raters with approval ratings over 85 percent were allowed to participate in the annotation tasks. Five annotators labeled each sentence, and IBM used the most prevalent of the five annotated results to determine the final labels.
     -   For *analytical tone*, humans labeled 915 of the 1330 sentences as analytical, 411 as non-analytical, and 4 as not understandable. By comparing the predicted label with these ground-truth labels, IBM found that its analytical tone detection received an F1 score of 0.7518.
     -   For *tentative tone*, humans labeled 292 of the 1000 sentences as tentative, 706 as non-tentative, and 2 as not understandable. By comparing the predicted label with the ground-truth labels, IBM found that its tentative tone detection received an F1 score of 0.6369.
     -   For *confident tone*, humans labeled 623 of the 1000 sentences as confident, 374 as non-confident, and 3 as not understandable. By comparing the predicted label with the ground-truth labels, IBM found that its confident tone detection received an F1 score of 0.7288.

@@ -9,7 +9,7 @@ subcollection: tone-analyzer
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
@@ -25,7 +25,7 @@ subcollection: tone-analyzer
 # Using the general-purpose endpoint
 {: #utgpe}
 
-The {{site.data.keyword.toneanalyzershort}} general-purpose endpoint analyzes the tone of written communications, from short email messages to longer documents. It can help you understand the emotional and language tones of your communications. For more information about the interface, including the Node.js, Java, and Python SDKs that are available for calling the service, see the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/tone-analyzer){: new_window}.
+The {{site.data.keyword.toneanalyzershort}} general-purpose endpoint analyzes the tone of written communications, from short email messages to longer documents. It can help you understand the emotional and language tones of your communications. For more information about the interface, including the Node.js, Java, and Python SDKs that are available for calling the service, see the [API reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
 {: shortdesc}
 
 Request logging is disabled for the {{site.data.keyword.toneanalyzershort}} service. Regardless of whether you set the `X-Watson-Learning-Opt-Out` request header, the service does not log or retain data from requests and responses.
@@ -218,7 +218,7 @@ For more examples, see the [Getting started tutorial](/docs/services/tone-analyz
 By default, the service uses the following character sets for input content:
 
 -   *For plain text and HTML content,* the service uses the International Standards Organization (ISO)-8859-1 character set (effectively the ASCII character set) per the HTTP version 1.1 specification.
--   *For JSON content,* the service effectively always uses the Unicode Transformation Format (UTF)-8 character set per Section 8.1 of the International Engineering Task Force (IETF) [Request for Comment (RFC) 7159 ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://tools.ietf.org/html/rfc7159#section-8.1){: new_window}.
+-   *For JSON content,* the service effectively always uses the Unicode Transformation Format (UTF)-8 character set per Section 8.1 of the International Engineering Task Force (IETF) [Request for Comment (RFC) 7159](https://tools.ietf.org/html/rfc7159#section-8.1){: external}.
 
 When submitting plain text or HTML content, include the `charset` parameter with the `Content-Type` header to indicate the character encoding of the input text. The following example specifies UTF-8 character encoding for plain text input:
 

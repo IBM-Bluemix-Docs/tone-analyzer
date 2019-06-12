@@ -2,14 +2,14 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-07"
+lastupdated: "2019-06-06"
 
 subcollection: tone-analyzer
 
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:tip: .tip}
 {:important: .important}
 {:note: .note}
@@ -97,10 +97,10 @@ The migration to IAM authentication affects new and existing service instances d
 
 For more information, see the following documentation:
 
--   To learn which authentication mechanism your service instance uses, view your service credentials by clicking the instance on the [{{site.data.keyword.cloud_notm}} dashboard ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/dashboard/apps){: new_window}.
+-   To learn which authentication mechanism your service instance uses, view your service credentials by clicking the instance on the [{{site.data.keyword.cloud_notm}} dashboard](https://{DomainName}/resources){: external}.
 -   For more information about using IAM tokens with Watson services, see [Authenticating with IAM tokens](/docs/services/watson?topic=watson-iam).
 -   For more information about using IAM API keys with Watson services, see [IAM service API keys](/docs/services/watson?topic=watson-api-key-bp).
--   For examples that use IAM authentication, see the [API reference ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/apidocs/tone-analyzer){: new_window}.
+-   For examples that use IAM authentication, see the [API reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
 
 ### 11 June 2018
 {: #June2018}
@@ -197,7 +197,7 @@ IBM updated the document emotion tone scores. The new model considers the emotio
 ### 18 October 2016
 {: #October2016b}
 
-IBM enhanced the social tone. The service now uses an open-source word-embedding technique that is called [GloVe ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://nlp.stanford.edu/projects/glove/){: new_window} to infer social tone scores. This change allows the service to cover a larger vocabulary of words when it calculates social tones. For more information about how social tones are inferred, see [The science behind the service](http://www.ibm.com/watson/developercloud/doc/personality-insights/science.html) for the {{site.data.keyword.personalityinsightsshort}} service.
+IBM enhanced the social tone. The service now uses an open-source word-embedding technique that is called [GloVe](https://nlp.stanford.edu/projects/glove/){: external} to infer social tone scores. This change allows the service to cover a larger vocabulary of words when it calculates social tones. For more information about how social tones are inferred, see [The science behind the service](https://cloud.ibm.com/docs/services/personality-insights?topic=personality-insights-science) for the {{site.data.keyword.personalityinsightsshort}} service.
 
 ### 3 October 2016
 {: #October2016a}
@@ -213,4 +213,4 @@ The generally available (GA) release of the {{site.data.keyword.toneanalyzershor
 -   The writing tone model was renamed to language tone.
 -   The language and emotion tone models now handle negations.
 -   The service no longer returns a response for sentences with fewer than three words.
--   The service now has a simplified and improved [demo ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://tone-analyzer-demo.ng.bluemix.net){: new_window}.
+-   The service now has a simplified and improved [demo](https://tone-analyzer-demo.ng.bluemix.net){: external}.
