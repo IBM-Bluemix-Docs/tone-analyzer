@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-07-03"
 
 subcollection: tone-analyzer
 
@@ -33,9 +33,6 @@ subcollection: tone-analyzer
 The {{site.data.keyword.toneanalyzershort}} service analyzes the tone of input content. This tutorial shows commands that analyze different sample content. The examples demonstrate both the general-purpose and the customer-engagement endpoints.
 {: shortdesc}
 
-The tutorial uses {{site.data.keyword.cloud}} Identity and Access Management (IAM) API keys for authentication. Older service instances might continue to use the `{username}` and `{password}` from their existing Cloud Foundry service credentials for authentication. Authenticate by using the approach that is right for your service instance. For more information about the service's use of IAM authentication, see the [Release notes](/docs/services/tone-analyzer?topic=tone-analyzer-rnrn).
-{: important}
-
 ## Before you begin
 {: #prerequisites}
 
@@ -47,19 +44,23 @@ The tutorial uses {{site.data.keyword.cloud}} Identity and Access Management (IA
     1.  {: hide-dashboard} From the [{{site.data.keyword.cloud_notm}} dashboard](https://{DomainName}/resources){: external}, click on your {{site.data.keyword.toneanalyzershort}} service instance to go to the {{site.data.keyword.toneanalyzershort}} service dashboard page.
     1.  On the **Manage** page, click **Show** to view your credentials.
     1.  Copy the `API Key` and `URL` values.
--   Make sure that you have the `curl` command.
-    -   The examples use the `curl` command to call methods of the HTTP interface. Install the version for your operating system from [curl.haxx.se](https://curl.haxx.se/){: external}. Install the version that supports the Secure Sockets Layer (SSL) protocol. Make sure to include the installed binary file on your `PATH` environment variable.
 
-When you enter a command, replace `{apikey}` and `{url}` with your actual API key and URL. Omit the braces, which indicate a variable value, from the command. An actual value resembles the following example:
-{: hide-dashboard}
+### Using the curl examples
+{: #getting-started-curl}
 
-```bash
-curl -X POST -u "apikey:L_HALhLVIksh1b73l97LSs6R_3gLo4xkujAaxm7i-b9x"
-. . .
-"https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21"
-```
-{:pre}
-{: hide-dashboard}
+This tutorial uses the `curl` command to call methods of the service's HTTP interface. Make sure that you have the `curl` command installed on your system.
+
+1.  To test whether `curl` is installed, run the following command on the command line. If the output lists the `curl` version that supports Secure Sockets Layer (SSL), you are set for the tutorial.
+
+    ```bash
+    curl -V
+    ```
+    {: pre}
+
+1.  If necessary, install the version of `curl` with SSL enabled for your operating system from [curl.haxx.se](https://curl.haxx.se/){: external}.
+
+Omit the braces from the examples. They indicate variable values.
+{: tip}
 
 ## Step 1: Using the general-purpose endpoint via the POST request method
 {: #generalPurposePost}
