@@ -12,6 +12,7 @@ Tone Analyzer
     {: .topicgroup}
     Demos
         [General purpose](https://tone-analyzer-demo.ng.bluemix.net/)
+        [Customer engagement](https://customer-engagement-demo.ng.bluemix.net/)
 
     {: .topicgroup}
     Additional resources
