@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-03-27"
+lastupdated: "2019-12-10"
 
 subcollection: tone-analyzer
 
@@ -25,7 +25,7 @@ subcollection: tone-analyzer
 # About
 {: #about}
 
-> **Service update:** *The {{site.data.keyword.toneanalyzershort}} service was updated on February 22, 2019. The service now uses token-based Identity and Access Management (IAM) authentication in the {{site.data.keyword.cloud}} Frankfurt location (**eu-de**). For more information, see the [22 February 2019 service update](/docs/services/tone-analyzer?topic=tone-analyzer-rnrn#February2019) in the release notes.*
+**Service update:** *The {{site.data.keyword.toneanalyzershort}} service was updated on December 12, 2019. The service now supports the full implementation of token-based Identity and Access Management (IAM) authentication, and private network endpoints for Premium plans. For more information, see the [12 December 2019 service update](/docs/services/tone-analyzer?topic=tone-analyzer-rnrn#December2019) in the release notes.*
 
 The {{site.data.keyword.toneanalyzerfull}} service uses linguistic analysis to detect emotional and language tones in written text. The service can analyze tone at both the document and sentence levels. You can use the service to understand how your written communications are perceived and then to improve the tone of your communications. Businesses can use the service to learn the tone of their customers' communications and to respond appropriately to each customer, or to understand and improve their customer conversations in general.
 {: shortdesc}

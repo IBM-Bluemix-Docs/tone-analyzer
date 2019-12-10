@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2019
-lastupdated: "2019-06-06"
+lastupdated: "2019-12-09"
 
 subcollection: tone-analyzer
 
@@ -31,6 +31,28 @@ The following sections document the new features and changes that were included 
 The release notes document the *service version* and *interface version* for each update. You specify the *interface version* with the `version` query parameter to use new features and functionality made available with that update. The service returns both versions with the `X-Service-Api-Version` response header.
 {: note}
 
+## 12 December 2019
+{: #December2019}
+
+**Service version** - `3.5.9`<br/> **Interface version** - `2017-09-21`
+
+- **Full support for IBM Cloud IAM**
+
+    - {{site.data.keyword.toneanalyzershort}} now supports the full implementation of {{site.data.keyword.cloud_notm}} Identity and Access Management (IAM). API keys for Watson services are no longer limited to a single service instance. You can create access policies and API keys that apply to more than one service, and you can grant access between services.
+    - To support this change, the API service endpoints use a different domain and include the service instance ID. The pattern is `api.{location}.{offering}.watson.cloud.ibm.com/instances/{instance_id}`.
+
+        Example URL for an instance hosted in the Dallas location: `api.us-south.tone-analyzer.watson.cloud.ibm.com/instances/6bbda3b3-d572-45e1-8c54-22d6ed9e52c2`
+
+        The previous public endpoint domain `watsonplatform.net`.
+
+        For more information, see the [API reference](https://{DomainName}/apidocs/tone-analyzer#service-endpoint){: external} in the API reference.
+
+        These URLs do not introduce a breaking change. The new URLs work both for your existing service instances and for new instances. The original URLs continue to work on your existing service instances for at least one year (until December 2020).
+    - For more information, see [Authenticating to Watson services](/docs/services/watson?topic=watson-iam).
+- **New network and data security features**
+    - **Support for private network endpoints**
+        - Users of Premium plans can create private network endpoints to connect to {{site.data.keyword.toneanalyzershort}} over a private network. Connections to private network endpoints do not require public internet access. For more information, see [Public and private network endpoints](/docs/tone-analyzer?topic=watson-public-private-endpoints).
+
 ## 22 February 2019
 {: #February2019}
 
@@ -46,31 +68,32 @@ The release notes document the *service version* and *interface version* for eac
 
 The {{site.data.keyword.toneanalyzershort}} service is now available in the {{site.data.keyword.cloud_notm}} London location (**eu-gb**). Like all locations, London uses token-based IAM authentication. All new services instances that you create in this location use IAM authentication.
 
-## 7 November 2018
+## Older releases
+{: #rnor}
+
+  - [7 November 2018](#November2018a)
+  - [30 October 2018](#October2018)
+  - [11 June 2018](#June2018)
+  - [25 May 2018](#May2018)
+  - [13 March 2018](#March2018)
+  - [28 September 2017](#September2017b)
+  - [25 September 2017](#September2017a)
+  - [6 July 2017](#July2017b)
+  - [1 July 2017](#July2017a)
+  - [8 May 2017](#May2017)
+  - [17 April 2017](#April2017)
+  - [15 March 2017](#March2017)
+  - [1 December 2016](#December2016)
+  - [18 October 2016](#October2016b)
+  - [3 October 2016](#October2016a)
+  - [19 May 2016](#May2016)
+
+### 7 November 2018
 {: #November2018a}
 
 **Service version** - `3.5.4`<br/> **Interface version** - `2017-09-21`
 
 The {{site.data.keyword.toneanalyzershort}} service is now available in the {{site.data.keyword.cloud_notm}} Tokyo location (**jp-tok**). Like all locations, Tokyo uses token-based IAM authentication. All new services instances that you create in this location use IAM authentication.
-
-## Older releases
-{: #rnor}
-
-  - [30 October 2018](#30-october-2018)
-  - [11 June 2018](#11-june-2018)
-  - [25 May 2018](#25-may-2018)
-  - [13 March 2018](#13-march-2018)
-  - [28 September 2017](#28-september-2017)
-  - [25 September 2017](#25-september-2017)
-  - [6 July 2017](#6-july-2017)
-  - [1 July 2017](#1-july-2017)
-  - [8 May 2017](#8-may-2017)
-  - [17 April 2017](#17-april-2017)
-  - [15 March 2017](#15-march-2017)
-  - [1 December 2016](#1-december-2016)
-  - [18 October 2016](#18-october-2016)
-  - [3 October 2016](#3-october-2016)
-  - [19 May 2016](#19-may-2016)
 
 ### 30 October 2018
 {: #October2018}

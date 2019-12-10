@@ -22,6 +22,7 @@ Tone Analyzer
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    /watson/watson-public-private-endpoints
     using-tone.md
     using-tone-chat.md
     ha-dr.md
