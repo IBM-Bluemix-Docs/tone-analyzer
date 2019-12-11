@@ -45,7 +45,7 @@ The release notes document the *service version* and *interface version* for eac
 
         The previous public endpoint domain was `watsonplatform.net`.
 
-        For more information about the URLs, see the [API reference](https://{DomainName}/apidocs/tone-analyzer#service-endpoint){: external} in the API reference.
+        For more information about the URLs, see the [API reference](https://{DomainName}/apidocs/tone-analyzer#service-endpoint){: external}.
 
         These URLs do not introduce a breaking change. The new URLs work both for your existing service instances and for new instances. The original URLs continue to work on your existing service instances for at least one year (until December 2020).
     - For more information about IAM, see [Authenticating to Watson services](/docs/services/watson?topic=watson-iam).
