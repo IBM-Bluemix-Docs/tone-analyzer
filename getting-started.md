@@ -1,8 +1,10 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-07-03"
+  years: 2015, 2020
+lastupdated: "2020-01-17"
+
+keywords: tone analyzer, getting started, tutorial
 
 subcollection: tone-analyzer
 
@@ -27,7 +29,7 @@ subcollection: tone-analyzer
 {:url: data-credential-placeholder='url'}
 {:hide-dashboard: .hide-dashboard}
 
-# Getting started tutorial
+# Getting started with {{site.data.keyword.toneanalyzershort}}
 {: #gettingStarted}
 
 The {{site.data.keyword.toneanalyzershort}} service analyzes the tone of input content. This tutorial shows commands that analyze different sample content. The examples demonstrate both the general-purpose and the customer-engagement endpoints.
@@ -42,7 +44,7 @@ The {{site.data.keyword.toneanalyzershort}} service analyzes the tone of input c
     1.  {: hide-dashboard} Click **Create**.
 -   Copy the credentials to authenticate to your service instance:
     1.  {: hide-dashboard} From the [{{site.data.keyword.cloud_notm}} dashboard](https://{DomainName}/resources){: external}, click on your {{site.data.keyword.toneanalyzershort}} service instance to go to the {{site.data.keyword.toneanalyzershort}} service dashboard page.
-    1.  On the **Manage** page, click **Show** to view your credentials.
+    1.  On the **Manage** page, click **Show Credentials** to view your credentials.
     1.  Copy the `API Key` and `URL` values.
 
 ### Using the curl examples
