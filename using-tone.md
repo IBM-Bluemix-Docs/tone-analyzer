@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-03-07"
+  years: 2015, 2020
+lastupdated: "2020-01-30"
 
 subcollection: tone-analyzer
 
@@ -101,7 +101,7 @@ The methods accept the following parameters.
       <code>YYYY-MM-DD</code>; for example, specify <code>2017-09-21</code>
       for September 21, 2017 (the latest version). For more information about
       all available versions, see the
-      [Release notes](/docs/services/tone-analyzer?topic=tone-analyzer-rnrn).
+      [Release notes](/docs/tone-analyzer?topic=tone-analyzer-rnrn).
     </td>
   </tr>
   <tr>
@@ -196,7 +196,7 @@ The following example `curl` command uses the HTTP `POST` request method to call
 curl -X POST -u "apikey:{apikey}"
 --header "Content-Type: application/json"
 --data-binary @./tone.json
-"https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21"
+"{url}/v3/tone?version=2017-09-21"
 ```
 {: pre}
 
@@ -204,13 +204,13 @@ The following example command is equivalent to the previous example but uses the
 
 ```bash
 curl -X GET -u "apikey:{apikey}"
-"https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21&text=Team%2C%20I%20know%20that
+"{url}/v3/tone?version=2017-09-21&text=Team%2C%20I%20know%20that
 %20times%20are%20tough%21%20Product%20sales%20have%20been%20disappointing%20for%20the%20past%20three%20quarters.
 %20We%20have%20a%20competitive%20product%2C%20but%20we%20need%20to%20do%20a%20better%20job%20of%20selling%20it%21"
 ```
 {: pre}
 
-For more examples, see the [Getting started tutorial](/docs/services/tone-analyzer?topic=tone-analyzer-gettingStarted).
+For more examples, see the [Getting started tutorial](/docs/tone-analyzer?topic=tone-analyzer-gettingStarted).
 
 ### Specifying the character set
 {: #charset}
@@ -243,7 +243,7 @@ To analyze JSON input with the `POST` request method, you pass the method a JSON
 ```
 {: codeblock}
 
-The following example shows the contents of the <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone.json" download="tone.json">tone.json <img src="../../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> file that is used with the examples in the [Getting started tutorial](/docs/services/tone-analyzer?topic=tone-analyzer-gettingStarted). The file includes a single paragraph of text that is written by one person. (The following text includes line breaks for readability; do not include them in actual input.)
+The following example shows the contents of the <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone.json" download="tone.json">tone.json <img src="../../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> file that is used with the examples in the [Getting started tutorial](/docs/tone-analyzer?topic=tone-analyzer-gettingStarted). The file includes a single paragraph of text that is written by one person. (The following text includes line breaks for readability; do not include them in actual input.)
 
 ```javascript
 {
@@ -316,7 +316,7 @@ The following example shows the structure of the `ToneScore` object:
 ### Example response
 {: #exampleResponse-tone}
 
-The following output is returned for the [Example requests](#exampleRequests). (The same output is returned for the first example in the [Getting started tutorial](/docs/services/tone-analyzer?topic=tone-analyzer-gettingStarted).) The response includes results for the full document and for each individual sentence. All reported tones have a score of at least 0.5. Tones with a score of at least 0.75 are likely to be perceived in the content.
+The following output is returned for the [Example requests](#exampleRequests). (The same output is returned for the first example in the [Getting started tutorial](/docs/tone-analyzer?topic=tone-analyzer-gettingStarted).) The response includes results for the full document and for each individual sentence. All reported tones have a score of at least 0.5. Tones with a score of at least 0.75 are likely to be perceived in the content.
 
 ```javascript
 {

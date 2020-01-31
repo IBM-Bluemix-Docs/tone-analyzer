@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-03-07"
+  years: 2015, 2020
+lastupdated: "2020-01-31"
 
 subcollection: tone-analyzer
 
@@ -64,7 +64,7 @@ To analyze tone with the customer-engagement endpoint, you call the `POST /v3/to
       <code>YYYY-MM-DD</code>; for example, specify <code>2017-09-21</code>
       for September 21, 2017 (the latest version). For more information about
       all available versions, see the
-      [Release notes](/docs/services/tone-analyzer?topic=tone-analyzer-rnrn).
+      [Release notes](/docs/tone-analyzer?topic=tone-analyzer-rnrn).
     </td>
   </tr>
   <tr>
@@ -151,7 +151,7 @@ The following example `curl` command calls the customer-engagement endpoint with
 curl -X POST -u "apikey:{apikey}"
 --header "Content-Type: application/json"
 --data-binary @./tone-chat.json
-"https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone_chat?version=2017-09-21"
+"{url}/v3/tone_chat?version=2017-09-21"
 ```
 {: pre}
 
@@ -239,7 +239,7 @@ The following example shows the structure of the `UtteranceAnalyses` object:
 ### Example response
 {: #exampleResponse-tone-chat}
 
-The following output is returned for the [Example request](#exampleRequest). (The same output is returned for the example in the [Getting started tutorial](/docs/services/tone-analyzer?topic=tone-analyzer-gettingStarted#customerEngagement).) All reported tones have a score of at least 0.5. Tones with a score of at least 0.75 are likely to be perceived by participants in the conversation.
+The following output is returned for the [Example request](#exampleRequest). (The same output is returned for the example in the [Getting started tutorial](/docs/tone-analyzer?topic=tone-analyzer-gettingStarted#customerEngagement).) All reported tones have a score of at least 0.5. Tones with a score of at least 0.75 are likely to be perceived by participants in the conversation.
 
 ```javascript
 {

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-12-09"
+  years: 2015, 2020
+lastupdated: "2020-01-31"
 
 subcollection: tone-analyzer
 
@@ -48,7 +48,7 @@ The release notes document the *service version* and *interface version* for eac
         For more information about the URLs, see the [API reference](https://{DomainName}/apidocs/tone-analyzer#service-endpoint){: external}.
 
         These URLs do not introduce a breaking change. The new URLs work both for your existing service instances and for new instances. The original URLs continue to work on your existing service instances for at least one year (until December 2020).
-    - For more information about IAM, see [Authenticating to Watson services](/docs/services/watson?topic=watson-iam).
+    - For more information about IAM, see [Authenticating to Watson services](/docs/watson?topic=watson-iam).
 - **New network and data security features**
     - **Support for private network endpoints**
     
@@ -122,8 +122,8 @@ The migration to IAM authentication affects new and existing service instances d
 For more information, see the following documentation:
 
 -   To learn which authentication mechanism your service instance uses, view your service credentials by clicking the instance on the [{{site.data.keyword.cloud_notm}} dashboard](https://{DomainName}/resources){: external}.
--   For more information about using IAM tokens with Watson services, see [Authenticating with IAM tokens](/docs/services/watson?topic=watson-iam).
--   For more information about using IAM API keys with Watson services, see [IAM service API keys](/docs/services/watson?topic=watson-api-key-bp).
+-   For more information about using IAM tokens with Watson services, see [Authenticating with IAM tokens](/docs/watson?topic=watson-iam).
+-   For more information about using IAM API keys with Watson services, see [IAM service API keys](/docs/watson?topic=watson-api-key-bp).
 -   For examples that use IAM authentication, see the [API reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
 
 ### 11 June 2018
@@ -221,7 +221,7 @@ IBM updated the document emotion tone scores. The new model considers the emotio
 ### 18 October 2016
 {: #October2016b}
 
-IBM enhanced the social tone. The service now uses an open-source word-embedding technique that is called [GloVe](https://nlp.stanford.edu/projects/glove/){: external} to infer social tone scores. This change allows the service to cover a larger vocabulary of words when it calculates social tones. For more information about how social tones are inferred, see [The science behind the service](https://cloud.ibm.com/docs/services/personality-insights?topic=personality-insights-science) for the {{site.data.keyword.personalityinsightsshort}} service.
+IBM enhanced the social tone. The service now uses an open-source word-embedding technique that is called [GloVe](https://nlp.stanford.edu/projects/glove/){: external} to infer social tone scores. This change allows the service to cover a larger vocabulary of words when it calculates social tones. For more information about how social tones are inferred, see [The science behind the service](/docs/personality-insights?topic=personality-insights-science) for the {{site.data.keyword.personalityinsightsshort}} service.
 
 ### 3 October 2016
 {: #October2016a}

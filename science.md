@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-06-06"
+  years: 2015, 2020
+lastupdated: "2020-01-30"
 
 subcollection: tone-analyzer
 
@@ -30,9 +30,9 @@ The {{site.data.keyword.toneanalyzerfull}} service is based on the theory of psy
 
 Psycholinguistics researchers work to understand whether the words that people use in their day-to-day lives reflect who they are, how they feel, and how they think. After several decades of research, it is now accepted in psychology, marketing, and other fields that language reflects more than just what people want to say. The frequency with which people use certain types of words can provide clues to their personality, thinking style, social connections, and emotional states.
 
-For example, people exhibit various tones in their daily communications: joyful or sad, open or conservative, analytical or informal ([Gou and others, 2014](/docs/services/tone-analyzer?topic=tone-analyzer-references#bib-gou), and [Jian and others, 2014](/docs/services/tone-analyzer?topic=tone-analyzer-references#bib-jian)). These tones can impact the perception of a person's online identity and the effectiveness of their communications in different contexts.
+For example, people exhibit various tones in their daily communications: joyful or sad, open or conservative, analytical or informal ([Gou and others, 2014](/docs/tone-analyzer?topic=tone-analyzer-references#bib-gou), and [Jian and others, 2014](/docs/tone-analyzer?topic=tone-analyzer-references#bib-jian)). These tones can impact the perception of a person's online identity and the effectiveness of their communications in different contexts.
 
-Moreover, in business email communications, people are likely to perceive negative emotions with greater intensity than they do positive emotions ([Byron, 2008](/docs/services/tone-analyzer?topic=tone-analyzer-references#bib-byron)). And in social media, people present different online identities that impact the impression that others have of them ([DiMicco and Millen, 2007](/docs/services/tone-analyzer?topic=tone-analyzer-references#bib-dimicco)).
+Moreover, in business email communications, people are likely to perceive negative emotions with greater intensity than they do positive emotions ([Byron, 2008](/docs/tone-analyzer?topic=tone-analyzer-references#bib-byron)). And in social media, people present different online identities that impact the impression that others have of them ([DiMicco and Millen, 2007](/docs/tone-analyzer?topic=tone-analyzer-references#bib-dimicco)).
 
 Many people naturally read a message and judge the tones that are conveyed by the sender. But can a computer detect the tones that are disclosed by a message accurately and automatically? This question is one of the many challenging issues to which researchers in the artificial intelligence and cognitive sciences fields are seeking answers. First with the {{site.data.keyword.personalityinsightsshort}} service and now with the {{site.data.keyword.toneanalyzershort}} service, IBM is answering this question.
 
@@ -41,11 +41,11 @@ Many people naturally read a message and judge the tones that are conveyed by th
 
 Research shows a strong and statistically significant correlation between word choice and personality, emotions, attitudes, intrinsic needs, values, and thought processes. Several researchers found that people vary in how often they use certain categories of words when they write for blogs, essays, and tweets. Researchers found that these communication mediums can help predict different aspects of personality:
 
--   [Fast and Funder (2008)](/docs/services/tone-analyzer?topic=tone-analyzer-references#bib-fast)
--   [Gill and others (2009)](/docs/services/tone-analyzer?topic=tone-analyzer-references#bib-gill)
--   [Golbeck and others (2011)](/docs/services/tone-analyzer?topic=tone-analyzer-references#bib-golbeck)
--   [Hirsh and Peterson (2009)](/docs/services/tone-analyzer?topic=tone-analyzer-references#bib-hirsh)
--   [Yarkoni (2010)](/docs/services/tone-analyzer?topic=tone-analyzer-references#bib-yarkoni)
+-   [Fast and Funder (2008)](/docs/tone-analyzer?topic=tone-analyzer-references#bib-fast)
+-   [Gill and others (2009)](/docs/tone-analyzer?topic=tone-analyzer-references#bib-gill)
+-   [Golbeck and others (2011)](/docs/tone-analyzer?topic=tone-analyzer-references#bib-golbeck)
+-   [Hirsh and Peterson (2009)](/docs/tone-analyzer?topic=tone-analyzer-references#bib-hirsh)
+-   [Yarkoni (2010)](/docs/tone-analyzer?topic=tone-analyzer-references#bib-yarkoni)
 
 Most of these prior works are based on finding psychologically meaningful word categories from word usage in writing. This research serves as the basis for IBM's work on the {{site.data.keyword.toneanalyzershort}} service. Relying on the scientific findings from psycholinguistics research, IBM is working to infer people's personality characteristics, their thinking and writing styles, their emotions, and their intrinsic needs and values from the words that they write. IBM uses its machine-learning models to evaluate these characteristics by assessing various features of a person's writing.
 

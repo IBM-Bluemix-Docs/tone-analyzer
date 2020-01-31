@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2015, 2019
-lastupdated: "2019-12-10"
+  years: 2015, 2020
+lastupdated: "2020-01-30"
 
 subcollection: tone-analyzer
 
@@ -25,7 +25,7 @@ subcollection: tone-analyzer
 # About
 {: #about}
 
-**Service update:** *The {{site.data.keyword.toneanalyzershort}} service was updated on December 12, 2019. The service now supports the full implementation of token-based Identity and Access Management (IAM) authentication, and private network endpoints for Premium plans. For more information, see the [12 December 2019 service update](/docs/services/tone-analyzer?topic=tone-analyzer-rnrn#December2019) in the release notes.*
+**Service update:** *The {{site.data.keyword.toneanalyzershort}} service was updated on December 12, 2019. The service now supports the full implementation of token-based Identity and Access Management (IAM) authentication, and private network endpoints for Premium plans. For more information, see the [12 December 2019 service update](/docs/tone-analyzer?topic=tone-analyzer-rnrn#December2019) in the release notes.*
 
 The {{site.data.keyword.toneanalyzerfull}} service uses linguistic analysis to detect emotional and language tones in written text. The service can analyze tone at both the document and sentence levels. You can use the service to understand how your written communications are perceived and then to improve the tone of your communications. Businesses can use the service to learn the tone of their customers' communications and to respond appropriately to each customer, or to understand and improve their customer conversations in general.
 {: shortdesc}
@@ -41,12 +41,12 @@ The service offers two endpoints:
 
 -   **General-purpose endpoint** (`GET` or `POST /v3/tone`)
 
-    Use the {{site.data.keyword.toneanalyzershort}} general-purpose endpoint to analyze shorter web data, such as email messages or tweets, or longer documents, such as articles or blog posts. Monitor social media to understand what customers are saying about a brand and to determine whom to target with specific messaging. The endpoint accepts JSON, plain text, or HTML input. For more information about the method and the tones that it returns, see [Using the general-purpose endpoint](/docs/services/tone-analyzer?topic=tone-analyzer-utgpe).
+    Use the {{site.data.keyword.toneanalyzershort}} general-purpose endpoint to analyze shorter web data, such as email messages or tweets, or longer documents, such as articles or blog posts. Monitor social media to understand what customers are saying about a brand and to determine whom to target with specific messaging. The endpoint accepts JSON, plain text, or HTML input. For more information about the method and the tones that it returns, see [Using the general-purpose endpoint](/docs/tone-analyzer?topic=tone-analyzer-utgpe).
 
     The [general-purpose demo](https://tone-analyzer-demo.ng.bluemix.net/){: external} submits content to the service for analysis. The service returns overall and sentence-level analyses of the tone of the content.
 -   **Customer-engagement endpoint** (`POST /v3/tone_chat`)
 
-    Use the {{site.data.keyword.toneanalyzershort}} customer-engagement endpoint to monitor customer service and support conversations. Escalate customer conversations when they turn sour or find opportunities to improve customer service scripts, dialog strategies, and customer journeys. The endpoint accepts JSON input. For more information about the method and the tones that it returns, see [Using the customer-engagement endpoint](/docs/services/tone-analyzer?topic=tone-analyzer-utco).
+    Use the {{site.data.keyword.toneanalyzershort}} customer-engagement endpoint to monitor customer service and support conversations. Escalate customer conversations when they turn sour or find opportunities to improve customer service scripts, dialog strategies, and customer journeys. The endpoint accepts JSON input. For more information about the method and the tones that it returns, see [Using the customer-engagement endpoint](/docs/tone-analyzer?topic=tone-analyzer-utco).
 
     The [customer-engagement demo](https://customer-engagement-demo.ng.bluemix.net/){: external} analyzes conversations between customers and customer service agents. The service measures customer satisfaction and concerns, and assesses agent performance, so that you can gauge how the interaction evolves.
 
@@ -62,15 +62,15 @@ Some interesting use cases of the service are
 -   *Chat bots* - Enable an automated agent to detect customer tones and craft suitable responses. For example, you might respond to sadness with "I'm sorry you are upset about this problem" or to satisfaction with "I'm glad you are satisfied with our service." (Customer-engagement endpoint)
 -   *Customer-engagement monitoring and quality assurance* - Monitor the overall tone of agent and customer communications, detect anomalies, and highlight opportunities to train agents on how to better communicate. (Customer-engagement endpoint)
 
-You can also use the {{site.data.keyword.toneanalyzershort}} service to analyze user input with other {{site.data.keyword.ibmwatson}} services such as [{{site.data.keyword.conversationfull}}](/docs/services/assistant?topic=assistant-index) or [{{site.data.keyword.speechtotextfull}}](/docs/services/speech-to-text?topic=speech-to-text-about).
+You can also use the {{site.data.keyword.toneanalyzershort}} service to analyze user input with other {{site.data.keyword.ibmwatson}} services such as [{{site.data.keyword.conversationfull}}](/docs/assistant?topic=assistant-index) or [{{site.data.keyword.speechtotextfull}}](/docs/speech-to-text?topic=speech-to-text-about).
 
-The {{site.data.keyword.toneanalyzershort}} service algorithmically calculates the tone of written text. It does not infer the personality characteristics of the author of the text. To obtain a personality portrait, see the [{{site.data.keyword.personalityinsightsfull}} service](/docs/services/personality-insights?topic=personality-insights-about).
+The {{site.data.keyword.toneanalyzershort}} service algorithmically calculates the tone of written text. It does not infer the personality characteristics of the author of the text. To obtain a personality portrait, see the [{{site.data.keyword.personalityinsightsfull}} service](/docs/personality-insights?topic=personality-insights-about).
 {: note}
 
 ## Language support
 {: #languages}
 
-The `/v3/tone` and `/v3/tone_chat` methods can analyze content in English (`en`) and French (`fr`). Both methods can respond with localized content in various languages. For more information, see [Using the general-purpose endpoint](/docs/services/tone-analyzer?topic=tone-analyzer-utgpe) and [Using the customer-engagement endpoint](/docs/services/tone-analyzer?topic=tone-analyzer-utco).
+The `/v3/tone` and `/v3/tone_chat` methods can analyze content in English (`en`) and French (`fr`). Both methods can respond with localized content in various languages. For more information, see [Using the general-purpose endpoint](/docs/tone-analyzer?topic=tone-analyzer-utgpe) and [Using the customer-engagement endpoint](/docs/tone-analyzer?topic=tone-analyzer-utco).
 
 ## HIPAA
 {: #hipaa}

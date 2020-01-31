@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-17"
+lastupdated: "2020-01-30"
 
 keywords: tone analyzer, getting started, tutorial
 
@@ -92,7 +92,7 @@ The following commands call the `POST /v3/tone` method to analyze the contents o
     ```
     {: pre}
 
-For an example of the method's output, see [Example response](/docs/services/tone-analyzer?topic=tone-analyzer-utgpe#exampleResponse-tone).
+For an example of the method's output, see [Example response](/docs/tone-analyzer?topic=tone-analyzer-utgpe#exampleResponse-tone).
 
 ## Step 2: Using the general-purpose endpoint via the GET request method
 {: #generalPurposeGet}
@@ -127,11 +127,11 @@ The following command calls the `POST /v3/tone_chat` method to analyze the conte
     ```
     {: pre}
 
-The service's response indicates the most prevalent tones that are detected for each utterance of the input. To view the content of the response for this request, see [Example response](/docs/services/tone-analyzer?topic=tone-analyzer-utco#exampleResponse-tone-chat).
+The service's response indicates the most prevalent tones that are detected for each utterance of the input. To view the content of the response for this request, see [Example response](/docs/tone-analyzer?topic=tone-analyzer-utco#exampleResponse-tone-chat).
 
 ## Next steps
 {: #gsns}
 
--   For more information about the `/v3/tone` method, see [Using the general-purpose endpoint](/docs/services/tone-analyzer?topic=tone-analyzer-utgpe).
--   For more information about the `/v3/tone_chat` method, see [Using the customer-engagement endpoint](/docs/services/tone-analyzer?topic=tone-analyzer-utco).
+-   For more information about the `/v3/tone` method, see [Using the general-purpose endpoint](/docs/tone-analyzer?topic=tone-analyzer-utgpe).
+-   For more information about the `/v3/tone_chat` method, see [Using the customer-engagement endpoint](/docs/tone-analyzer?topic=tone-analyzer-utco).
 -   For more information about the methods of the service's interface, see the [API reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
