@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="tone-analyzer" category="ai" audience="service" arm="347" href="/docs/services/tone-analyzer/getting-started.html" path="services/tone-analyzer"}
+{: .toc subcollection="tone-analyzer" category="ai" audience="service" href="/docs/tone-analyzer?tone-analyzer-gettingStarted" path="tone-analyzer"}
 Tone Analyzer
 
     {: .navgroup id="learn"}
