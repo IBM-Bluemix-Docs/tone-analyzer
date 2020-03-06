@@ -2,12 +2,15 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-30"
+lastupdated: "2020-03-06"
 
 subcollection: tone-analyzer
 
 ---
 
+{:help: data-hd-content-type='help'}
+{:troubleshoot: data-hd-content-type='troubleshoot'}
+{:support: data-reuse='support'}
 {:shortdesc: .shortdesc}
 {:external: target="_blank" .external}
 {:tip: .tip}
@@ -189,6 +192,8 @@ Submit no more than 128 KB of total input content and no more than 1000 individu
 
 ### Example requests
 {: #exampleRequests}
+{: help}
+{: support}
 
 The following example `curl` command uses the HTTP `POST` request method to call the general-purpose endpoint with the input file <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone.json" download="tone.json">tone.json <img src="../../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> and a version of `2017-09-21`. The example requests an analysis for both the full document and the individual sentences.
 
@@ -214,6 +219,8 @@ For more examples, see the [Getting started tutorial](/docs/tone-analyzer?topic=
 
 ### Specifying the character set
 {: #charset}
+{: troubleshoot}
+{: support}
 
 By default, the service uses the following character sets for input content:
 
@@ -233,6 +240,8 @@ To prevent similar errors when using the `curl` command, always pass the content
 
 ## Specifying JSON input
 {: #JSONinput}
+{: help}
+{: support}
 
 To analyze JSON input with the `POST` request method, you pass the method a JSON `ToneInput` object with the following simple format:
 
@@ -380,6 +389,8 @@ The following output is returned for the [Example requests](#exampleRequests). (
 
 ## General-purpose tones
 {: #tones-tone}
+{: help}
+{: support}
 
 The following table describes the general-purpose tones that the service can return. A tone whose score is less than 0.5 is omitted, indicating that the emotion is unlikely to be perceived in the content. A score greater than 0.75 indicates a high likelihood that the tone is perceived.
 

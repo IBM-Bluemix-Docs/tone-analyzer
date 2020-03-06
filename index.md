@@ -2,12 +2,14 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-30"
+lastupdated: "2020-03-06"
 
 subcollection: tone-analyzer
 
 ---
 
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:shortdesc: .shortdesc}
 {:external: target="_blank" .external}
 {:tip: .tip}
@@ -36,6 +38,8 @@ You submit JSON, plain text, or HTML input that contains your written content to
 
 ## Tone Analyzer endpoints
 {: #itae}
+{: help}
+{: support}
 
 The service offers two endpoints:
 
@@ -69,6 +73,8 @@ The {{site.data.keyword.toneanalyzershort}} service algorithmically calculates t
 
 ## Language support
 {: #languages}
+{: help}
+{: support}
 
 The `/v3/tone` and `/v3/tone_chat` methods can analyze content in English (`en`) and French (`fr`). Both methods can respond with localized content in various languages. For more information, see [Using the general-purpose endpoint](/docs/tone-analyzer?topic=tone-analyzer-utgpe) and [Using the customer-engagement endpoint](/docs/tone-analyzer?topic=tone-analyzer-utco).
 
