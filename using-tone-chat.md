@@ -2,12 +2,14 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-31"
+lastupdated: "2020-03-06"
 
 subcollection: tone-analyzer
 
 ---
 
+{:help: data-hd-content-type='help'}
+{:support: data-reuse='support'}
 {:shortdesc: .shortdesc}
 {:external: target="_blank" .external}
 {:tip: .tip}
@@ -144,6 +146,8 @@ The service returns response code 400 if all utterances of the input have more t
 
 ### Example request
 {: #exampleRequest}
+{: help}
+{: support}
 
 The following example `curl` command calls the customer-engagement endpoint with the input file <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone-chat.json" download="tone-chat.json">tone-chat.json <img src="../../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> and a version of `2017-09-21`:
 
@@ -157,6 +161,8 @@ curl -X POST -u "apikey:{apikey}"
 
 ## Specifying JSON input
 {: #JSONrequest}
+{: help}
+{: support}
 
 You pass the method a JSON `ToneChatInput` object with the following format. The `utterances` field provides an array of `utterance` objects. The `text` field is a required string that provides an utterance that was contributed by a user to the conversation that is to be analyzed. The `user` field is an optional string that identifies the user who contributed the utterance.
 
@@ -300,6 +306,8 @@ The following output is returned for the [Example request](#exampleRequest). (Th
 
 ## Customer-engagement tones
 {: #tones-tone-chat}
+{: help}
+{: support}
 
 The service can return scores for the following seven tones.
 
