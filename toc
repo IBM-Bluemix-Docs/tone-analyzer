@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="tone-analyzer" category="ai" audience="service" href="/docs/tone-analyzer?tone-analyzer-gettingStarted" path="tone-analyzer"}
+{: .toc subcollection="tone-analyzer" category="ai" audience="service" href="/docs/tone-analyzer?tone-analyzer-gettingStarted" console-page="/developer/watson" product-page="https://www.ibm.com/cloud/watson-tone-analyzer" path="tone-analyzer"}
 Tone Analyzer
 
     {: .navgroup id="learn"}
