@@ -48,6 +48,5 @@ Tone Analyzer
     {: .topicgroup}
     Developer community
         [StackOverflow](http://stackoverflow.com/questions/tagged/tone-analyzer)
-        [IBM Developer Answers](https://developer.ibm.com/answers/topics/tone-analyzer/)
         [WDC Slack channel](http://wdc-slack-inviter.mybluemix.net/)
     {: .navgroup-end}
