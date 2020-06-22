@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-03-06"
+lastupdated: "2020-06-11"
 
 subcollection: tone-analyzer
 
@@ -198,9 +198,9 @@ Submit no more than 128 KB of total input content and no more than 1000 individu
 The following example `curl` command uses the HTTP `POST` request method to call the general-purpose endpoint with the input file <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone.json" download="tone.json">tone.json <img src="../../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> and a version of `2017-09-21`. The example requests an analysis for both the full document and the individual sentences.
 
 ```bash
-curl -X POST -u "apikey:{apikey}"
---header "Content-Type: application/json"
---data-binary @./tone.json
+curl -X POST -u "apikey:{apikey}" \
+--header "Content-Type: application/json" \
+--data-binary @./tone.json \
 "{url}/v3/tone?version=2017-09-21"
 ```
 {: pre}
@@ -208,10 +208,8 @@ curl -X POST -u "apikey:{apikey}"
 The following example command is equivalent to the previous example but uses the HTTP `GET` request method:
 
 ```bash
-curl -X GET -u "apikey:{apikey}"
-"{url}/v3/tone?version=2017-09-21&text=Team%2C%20I%20know%20that
-%20times%20are%20tough%21%20Product%20sales%20have%20been%20disappointing%20for%20the%20past%20three%20quarters.
-%20We%20have%20a%20competitive%20product%2C%20but%20we%20need%20to%20do%20a%20better%20job%20of%20selling%20it%21"
+curl -X GET -u "apikey:{apikey}" \
+"{url}/v3/tone?version=2017-09-21&text=Team%2C%20I%20know%20that%20times%20are%20tough%21%20Product%20sales%20have%20been%20disappointing%20for%20the%20past%20three%20quarters.%20We%20have%20a%20competitive%20product%2C%20but%20we%20need%20to%20do%20a%20better%20job%20of%20selling%20it%21"
 ```
 {: pre}
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-30"
+lastupdated: "2020-06-22"
 
 keywords: tone analyzer, getting started, tutorial
 
@@ -88,7 +88,7 @@ The following commands call the `POST /v3/tone` method to analyze the contents o
     curl -X POST -u "apikey:{apikey}"{: apikey} \
     --header "Content-Type: application/json" \
     --data-binary @{path_to_file}tone.json \
-    "{url}/v3/tone?version=2017-09-21&sentences=false"{: url} \
+    "{url}/v3/tone?version=2017-09-21&sentences=false"{: url}
     ```
     {: pre}
 
@@ -103,11 +103,7 @@ The interface also offers a `GET /v3/tone` method. The `GET` method provides the
 
     ```bash
     curl -X GET -u "apikey:{apikey}"{: apikey} \
-    "{url}/v3/tone?version=2017-09-21
-    &text=Team%2C%20I%20know%20that%20times%20are%20tough%21%20Product%20sales%20have
-    %20been%20disappointing%20for%20the%20past%20three%20quarters.%20We%20have%20a%20
-    competitive%20product%2C%20but%20we%20need%20to%20do%20a%20better%20job%20of%20
-    selling%20it%21"{: url}
+    "{url}/v3/tone?version=2017-09-21&text=Team%2C%20I%20know%20that%20times%20are%20tough%21%20Product%20sales%20have%20been%20disappointing%20for%20the%20past%20three%20quarters.%20We%20have%20a%20competitive%20product%2C%20but%20we%20need%20to%20do%20a%20better%20job%20of%20selling%20it%21"{: url}
     ```
     {: pre}
 
