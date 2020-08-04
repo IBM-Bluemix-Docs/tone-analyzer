@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-11"
+lastupdated: "2020-08-04"
 
 subcollection: tone-analyzer
 
@@ -195,7 +195,7 @@ Submit no more than 128 KB of total input content and no more than 1000 individu
 {: help}
 {: support}
 
-The following example `curl` command uses the HTTP `POST` request method to call the general-purpose endpoint with the input file <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone.json" download="tone.json">tone.json <img src="../../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> and a version of `2017-09-21`. The example requests an analysis for both the full document and the individual sentences.
+The following example `curl` command uses the HTTP `POST` request method to call the general-purpose endpoint with the input file <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone.json" download="tone.json">tone.json <img src="../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> and a version of `2017-09-21`. The example requests an analysis for both the full document and the individual sentences.
 
 ```bash
 curl -X POST -u "apikey:{apikey}" \
@@ -250,7 +250,7 @@ To analyze JSON input with the `POST` request method, you pass the method a JSON
 ```
 {: codeblock}
 
-The following example shows the contents of the <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone.json" download="tone.json">tone.json <img src="../../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> file that is used with the examples in the [Getting started tutorial](/docs/tone-analyzer?topic=tone-analyzer-gettingStarted). The file includes a single paragraph of text that is written by one person. (The following text includes line breaks for readability; do not include them in actual input.)
+The following example shows the contents of the <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone.json" download="tone.json">tone.json <img src="../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> file that is used with the examples in the [Getting started tutorial](/docs/tone-analyzer?topic=tone-analyzer-gettingStarted). The file includes a single paragraph of text that is written by one person. (The following text includes line breaks for readability; do not include them in actual input.)
 
 ```javascript
 {
