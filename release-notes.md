@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-01-31"
+lastupdated: "2020-09-03"
 
 subcollection: tone-analyzer
 
@@ -51,7 +51,7 @@ The release notes document the *service version* and *interface version* for eac
     - For more information about IAM, see [Authenticating to Watson services](/docs/watson?topic=watson-iam).
 - **New network and data security features**
     - **Support for private network endpoints**
-    
+
         Users of Premium plans can create private network endpoints to connect to {{site.data.keyword.toneanalyzershort}} over a private network. Connections to private network endpoints do not require public internet access. For more information, see [Public and private network endpoints](/docs/tone-analyzer?topic=watson-public-private-endpoints).
 
 ## 22 February 2019
@@ -122,8 +122,7 @@ The migration to IAM authentication affects new and existing service instances d
 For more information, see the following documentation:
 
 -   To learn which authentication mechanism your service instance uses, view your service credentials by clicking the instance on the [{{site.data.keyword.cloud_notm}} dashboard](https://{DomainName}/resources){: external}.
--   For more information about using IAM tokens with Watson services, see [Authenticating with IAM tokens](/docs/watson?topic=watson-iam).
--   For more information about using IAM API keys with Watson services, see [IAM service API keys](/docs/watson?topic=watson-api-key-bp).
+-   For more information about using IAM API keys and tokens with Watson services, see [Authenticating with IAM tokens](/docs/watson?topic=watson-iam).
 -   For examples that use IAM authentication, see the [API reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
 
 ### 11 June 2018
