@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-08-04"
+lastupdated: "2020-09-08"
 
 keywords: tone analyzer, getting started, tutorial
 
@@ -110,7 +110,7 @@ The interface also offers a `GET /v3/tone` method. The `GET` method provides the
 ## Step 3: Using the customer-engagement endpoint
 {: #customerEngagement}
 
-The following command calls the `POST /v3/tone_chat` method to analyze the contents of the file `tone-chat.json`. The file includes a brief exchange of messages between two people, a <code>customer</code> and an <code>agent</code>.
+The following command calls the `POST /v3/tone_chat` method to analyze the contents of the file `tone-chat.json`. The file includes a brief exchange of messages between two people, a `customer` and an `agent`.
 
 1.  Download the sample file <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone-chat.json" download="tone-chat.json">tone-chat.json <img src="../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a>.
 1.  Issue the following command to analyze the tone of the exchange in the sample file.

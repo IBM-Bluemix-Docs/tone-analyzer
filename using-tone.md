@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-08-04"
+lastupdated: "2020-09-08"
 
 subcollection: tone-analyzer
 
@@ -42,151 +42,37 @@ To analyze tone with the general-purpose endpoint, you call one of the two versi
 -   The `POST /v3/tone` method accepts input content in JSON, plain text, or HTML format via the required body of the request. Use this version of the method for longer text or for text that you do not want to expose on the URL.
 -   The `GET /v3/tone` method accepts input content via its required `text` query parameter. Use this version of the method for simple text that is easily accommodated on the URL.
 
-The methods accept the following parameters.
+The methods accept the following parameters:
 
-<table>
-  <caption>Table 1. Parameters of the <code>/v3/tone</code> methods</caption>
-  <tr>
-    <th style="text-align:left; width:20%">Parameter</th>
-    <th style="text-align:center; width:12%">Type</th>
-    <th style="text-align:center; width:20%">Data type</th>
-    <th style="text-align:left">Description</th>
-  </tr>
-  <tr>
-    <td><code>Body</code><br/><em>Required for <code>POST</code></em></td>
-    <td style="text-align:center">Body</td>
-    <td style="text-align:center">JSON object | String</td>
-    <td>
-      JSON, plain text, or HTML input that contains the content to
-      be analyzed. For JSON input, provide an object of type
-      <code>ToneInput</code>. For more information, see
-      [Specifying JSON input](#JSONinput). <em>Not supported for
-      <code>GET</code> requests.</em>
-    </td>
-  </tr>
-  <tr>
-    <td><code>text</code><br/><em>Required for <code>GET</code></em></td>
-    <td style="text-align:center">Query</td>
-    <td style="text-align:center">String</td>
-    <td>
-      Plain text input that contains the content to be analyzed. You must
-      URL-encode the input. <em>Not supported for <code>POST</code>
-        requests.</em>
-    </td>
-  </tr>
-  <tr>
-    <td><code>Content-Type</code><br/><em>Required for <code>POST</code></em></td>
-    <td style="text-align:center">Header</td>
-    <td style="text-align:center">String</td>
-    <td>
-      The content type of the request.
-      <ul style="margin:0px 0px 0px 20px; padding:0px">
-        <li style="margin:0px; padding:0px">
-          <code>text/plain</code> for plain text
-        </li>
-        <li style="margin:0px; padding:0px">
-            <code>text/html</code> for text in HTML (the service removes
-            HTML tags and analyzes only the textual content)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>application/json</code> for text in JSON format
-        </li>
-      </ul>
-    <em>Omit for <code>GET</code> requests.</em>
-    </td>
-  </tr>
-  <tr>
-    <td><code>version</code><br/><em>Required</em></td>
-    <td style="text-align:center">Query</td>
-    <td style="text-align:center">String</td>
-    <td>
-      The version of the API that you want to use as a date in the format
-      <code>YYYY-MM-DD</code>; for example, specify <code>2017-09-21</code>
-      for September 21, 2017 (the latest version). For more information about
-      all available versions, see the
-      [Release notes](/docs/tone-analyzer?topic=tone-analyzer-rnrn).
-    </td>
-  </tr>
-  <tr>
-    <td><code>Content-Language</code><br/><em>Optional</em></td>
-    <td style="text-align:center">Header</td>
-    <td style="text-align:center">String</td>
-    <td>
-      The language of the input content.
-      <ul style="margin:0px 0px 0px 20px; padding:0px">
-        <li style="margin:0px; padding:0px">
-          <code>en</code> (English, the default)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>fr</code> (French)
-        </li>
-      </ul>
-      Regional variants are treated as their parent language; for example,
-      <code>en-US</code> is interpreted as <code>en</code>. The input
-      content must match the specified language. Do not submit content
-      that contains both languages. You can use different languages for
-      the input and response.
-    </td>
-  </tr>
-  <tr>
-    <td><code>Accept-Language</code><br/><em>Optional</em></td>
-    <td style="text-align:center">Header</td>
-    <td style="text-align:center">String</td>
-    <td>
-      The requested language of the response.
-      <ul style="margin:0px 0px 0px 20px; padding:0px">
-        <li style="margin:0px; padding:0px">
-          <code>ar</code> (Arabic)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>de</code> (German)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>en</code> (English, the default)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>es</code> (Spanish)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>fr</code> (French)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>it</code> (Italian)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>ja</code> (Japanese)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>ko</code> (Korean)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>pt-br</code> (Brazilian Portuguese)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>zh-cn</code> (Simplified Chinese)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>zh-tw</code> (Traditional Chinese)
-        </li>
-      </ul>
-      For two-character arguments, regional variants are treated as their
-      parent language; for example, <code>en-US</code> is interpreted as
-      <code>en</code>. You can use different languages for the input and
-      response.
-    </td>
-  </tr>
-  <tr>
-    <td><code>sentences</code><br/><em>Optional</em></td>
-    <td style="text-align:center">Query</td>
-    <td style="text-align:center">Boolean</td>
-    <td>
-      Indicates whether the service is to return an analysis of each
-      individual sentence in addition to its analysis of the full document.
-      If <code>true</code> (the default), the service returns results for
-      each sentence.
-    </td>
-  </tr>
-</table>
+-   `body` (request body, *required for `POST`*, JSON object or string) - JSON, plain text, or HTML input that contains the content to be analyzed. For JSON input, provide an object of type `ToneInput`. For more information, see [Specifying JSON input](#JSONinput). *Not supported for `GET` requests.*
+-   `text` (query parameter, *required for `GET`*, string) - Plain text input that contains the content to be analyzed. You must URL-encode the input. *Not supported for `POST` requests.*
+-   `Content-Type` (request header, *required for `POST`*, string) - The content type of the request:
+    -   `text/plain` for plain text
+    -   `text/html` for text in HTML (the service removes HTML tags and analyzes only the textual content)
+    -   `application/json` for text in JSON format
+
+    *Omit for `GET` requests.*
+-   `version` (query parameter, *required* string) - The version of the API that you want to use as a date in the format `YYYY-MM-DD`; for example, specify `2017-09-21` for September 21, 2017 (the latest version). For more information about all available versions, see the [Release notes](/docs/tone-analyzer?topic=tone-analyzer-rnrn).
+-   `Content-Language` (request header, *optional* string) - The language of the input content:
+    -   `en` (English, the default)
+    -   `fr` (French)
+
+    Regional variants are treated as their parent language. For example, `en-US` is interpreted as `en`. The input  content must match the specified language. Do not submit content that contains both languages. You can use different languages for the input and response.
+-   `Accept-Language` (request header, *optional* string) - The requested language of the response:
+    -   `ar` (Arabic)
+    -   `de` (German)
+    -   `en` (English, the default)
+    -   `es` (Spanish)
+    -   `fr` (French)
+    -   `it` (Italian)
+    -   `ja` (Japanese)
+    -   `ko` (Korean)
+    -   `pt-br` (Brazilian Portuguese)
+    -   `zh-cn` (Simplified Chinese)
+    -   `zh-tw` (Traditional Chinese)
+
+    For two-character arguments, regional variants are treated as their parent language. For example, `en-US` is interpreted as `en`. You can use different languages for the input and response.
+-   `sentences` (query parameter, *optional* boolean) - Indicates whether the service is to return an analysis of each individual sentence in addition to its analysis of the full document. If `true` (the default), the service returns results for each sentence.
 
 Submit no more than 128 KB of total input content and no more than 1000 individual sentences. The service analyzes the first 1000 sentences for document-level analysis and only the first 100 sentences for sentence-level analysis. It returns a `warning` field as part of its response if you exceed either limit; the request still succeeds with HTTP response code 200.
 
@@ -392,67 +278,13 @@ The following output is returned for the [Example requests](#exampleRequests). (
 
 The following table describes the general-purpose tones that the service can return. A tone whose score is less than 0.5 is omitted, indicating that the emotion is unlikely to be perceived in the content. A score greater than 0.75 indicates a high likelihood that the tone is perceived.
 
-<table>
-  <caption>Table 2. General-purpose tones</caption>
-  <tr>
-    <th style="text-align:left; vertical-align:bottom; width:20%">Tone / ID</th>
-    <th style="text-align:left">Description</th>
-  </tr>
-  <tr>
-    <td>Anger<br/><code>anger</code></td>
-    <td>
-      Anger is evoked due to injustice, conflict, humiliation, negligence,
-      or betrayal. If anger is active, the individual attacks the target,
-      verbally or physically. If anger is passive, the person silently
-      sulks and feels tension and hostility. (An emotional tone.)
-    </td>
-  </tr>
-  <tr>
-    <td>Fear<br/><code>fear</code></td>
-    <td>
-      Fear is a response to impending danger. It is a survival mechanism that
-      is triggered as a reaction to some negative stimulus. Fear can be a mild
-      caution or an extreme phobia. (An emotional tone.)
-    </td>
-  </tr>
-  <tr>
-    <td>Joy<br/><code>joy</code></td>
-    <td>
-      Joy (or happiness) has shades of enjoyment, satisfaction, and pleasure.
-      Joy brings a sense of well-being, inner peace, love, safety, and
-      contentment. (An emotional tone.)
-    </td>
-  </tr>
-  <tr>
-    <td>Sadness<br/><code>sadness</code></td>
-    <td>
-      Sadness indicates a feeling of loss and disadvantage. When a person is
-      quiet, less energetic, and withdrawn, it can be inferred that they feel
-      sadness. (An emotional tone.)
-    </td>
-  </tr>
-  <tr>
-    <td>Analytical<br/><code>analytical</code></td>
-    <td>
-      An analytical tone indicates a person's reasoning and analytical attitude
-      about things. An analytical person might be perceived as intellectual,
-      rational, systematic, emotionless, or impersonal. (A language tone.)
-    </td>
-  </tr>
-  <tr>
-    <td>Confident<br/><code>confident</code></td>
-    <td>
-      A confident tone indicates a person's degree of certainty. A confident
-      person might be perceived as assured, collected, hopeful, or egotistical.
-      (A language tone.)
-    </td>
-  </tr>
-  <tr>
-    <td>Tentative<br/><code>tentative</code></td>
-    <td>
-      A tentative tone indicates a person's degree of inhibition. A tentative
-      person might be perceived as questionable, doubtful, or debatable. (A
-      language tone.)
-    </td>
-  </tr>
-</table>
+| Tone / ID | Description |
+|-----------|-------------|
+| Anger<br/>`anger` | Anger is evoked due to injustice, conflict, humiliation, negligence, or betrayal. If anger is active, the individual attacks the target, verbally or physically. If anger is passive, the person silently sulks and feels tension and hostility. (An emotional tone.) |
+| Fear<br/>`fear` | Fear is a response to impending danger. It is a survival mechanism that is triggered as a reaction to some negative stimulus. Fear can be a mild caution or an extreme phobia. (An emotional tone.) |
+| Joy<br/>`joy` | Joy (or happiness) has shades of enjoyment, satisfaction, and pleasure. Joy brings a sense of well-being, inner peace, love, safety, and contentment. (An emotional tone.) |
+| Sadness<br/>`sadness` | Sadness indicates a feeling of loss and disadvantage. When a person is quiet, less energetic, and withdrawn, it can be inferred that they feel sadness. (An emotional tone.) |
+| Analytical<br/>`analytical` | An analytical tone indicates a person's reasoning and analytical attitude about things. An analytical person might be perceived as intellectual, rational, systematic, emotionless, or impersonal. (A language tone.) |
+| Confident<br/>`confident` | A confident tone indicates a person's degree of certainty. A confident person might be perceived as assured, collected, hopeful, or egotistical. (A language tone.) |
+| Tentative<br/>`tentative` | A tentative tone indicates a person's degree of inhibition. A tentative person might be perceived as questionable, doubtful, or debatable. (A language tone.) |
+{: caption="Table 1. General-purpose tones"}

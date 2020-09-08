@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-08-04"
+lastupdated: "2020-09-08"
 
 subcollection: tone-analyzer
 
@@ -36,108 +36,29 @@ Request logging is disabled for the {{site.data.keyword.toneanalyzershort}} serv
 ## Requesting a tone analysis
 {: #request-tone-chat}
 
-To analyze tone with the customer-engagement endpoint, you call the `POST /v3/tone_chat` method with the following parameters.
+To analyze tone with the customer-engagement endpoint, you call the `POST /v3/tone_chat` method with the following parameters:
 
-<table>
-  <caption>Table 1. Parameters of the <code>POST /v3/tone_chat</code>
-    method</caption>
-  <tr>
-    <th style="text-align:left; width:20%">Parameter</th>
-    <th style="text-align:center; width:12%">Type</th>
-    <th style="text-align:center; width:20%">Data type</th>
-    <th style="text-align:left">Description</th>
-  </tr>
-  <tr>
-    <td><code>Body</code><br/><em>Required</em></td>
-    <td style="text-align:center">Body</td>
-    <td style="text-align:center">JSON object</td>
-    <td>
-      A JSON <code>ToneChatInput</code> object that contains the
-      content that is to be analyzed. For more information, see
-      [Specifying JSON input](#JSONrequest).
-    </td>
-  </tr>
-  <tr>
-    <td><code>version</code><br/><em>Required</em></td>
-    <td style="text-align:center">Query</td>
-    <td style="text-align:center">String</td>
-    <td>
-      The version of the API that you want to use as a date in the format
-      <code>YYYY-MM-DD</code>; for example, specify <code>2017-09-21</code>
-      for September 21, 2017 (the latest version). For more information about
-      all available versions, see the
-      [Release notes](/docs/tone-analyzer?topic=tone-analyzer-rnrn).
-    </td>
-  </tr>
-  <tr>
-    <td><code>Content-Language</code><br/><em>Optional</em></td>
-    <td style="text-align:center">Header</td>
-    <td style="text-align:center">String</td>
-    <td>
-      The language of the input content.
-      <ul style="margin:0px 0px 0px 20px; padding:0px">
-        <li style="margin:0px; padding:0px">
-          <code>en</code> (English, the default)
-        </li>
-        <li style="margin:0px; padding:0px">
-            <code>fr</code> (French)
-        </li>
-      </ul>
-      Regional variants are treated as their parent language; for example,
-      <code>en-US</code> is interpreted as <code>en</code>. The input
-      content must match the specified language. Do not submit content
-      that contains both languages. You can use different languages for
-      the input and response.
-    </td>
-  </tr>
-  <tr>
-    <td><code>Accept-Language</code><br/><em>Optional</em></td>
-    <td style="text-align:center">Header</td>
-    <td style="text-align:center">String</td>
-    <td>
-      The requested language of the response.
-      <ul style="margin:0px 0px 0px 20px; padding:0px">
-        <li style="margin:0px; padding:0px">
-          <code>ar</code> (Arabic)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>de</code> (German)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>en</code> (English, the default)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>es</code> (Spanish)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>fr</code> (French)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>it</code> (Italian)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>ja</code> (Japanese)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>ko</code> (Korean)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>pt-br</code> (Brazilian Portuguese)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>zh-cn</code> (Simplified Chinese)
-        </li>
-        <li style="margin:0px; padding:0px">
-          <code>zh-tw</code> (Traditional Chinese)
-        </li>
-      </ul>
-      For two-character arguments, regional variants are treated as their
-      parent language; for example, <code>en-US</code> is interpreted as
-      <code>en</code>. You can use different languages for the input and
-      response.
-    </td>
-  </tr>
-</table>
+-   `Body` (request body, *required* JSON object) - A JSON `ToneChatInput` object that contains the content that is to be analyzed. For more information, see [Specifying JSON input](#JSONrequest).
+-   `version` (query parameter, *required* string) - The version of the API that you want to use as a date in the format `YYYY-MM-DD`; for example, specify `2017-09-21` for September 21, 2017 (the latest version). For more information about all available versions, see the [Release notes](/docs/tone-analyzer?topic=tone-analyzer-rnrn).
+-   `Content-Language` (request header, *optional string) - The language of the input content:
+    -   `en` (English, the default)
+    -   `fr` (French)
+
+    Regional variants are treated as their parent language. For example, `en-US` is interpreted as `en`. The input content must match the specified language. Do not submit content that contains both languages. You can use different languages for the input and response.
+-   `Accept-Language` (request header, *optional* string) - The requested language of the response:
+    -   `ar` (Arabic)
+    -   `de` (German)
+    -   `en` (English, the default)
+    -   `es` (Spanish)
+    -   `fr` (French)
+    -   `it` (Italian)
+    -   `ja` (Japanese)
+    -   `ko` (Korean)
+    -   `pt-br` (Brazilian Portuguese)
+    -   `zh-cn` (Simplified Chinese)
+    -   `zh-tw` (Traditional Chinese)
+
+    For two-character arguments, regional variants are treated as their parent language. For example, `en-US` is interpreted as `en`. You can use different languages for the input and response.
 
 If you submit more than 50 utterances, the service returns a `warning` field for the overall content at the `utterances_tone` level of its response; it analyzes only the first 50 utterances. If you submit a single utterance that contains more than 500 characters, the service returns an `error` field for that utterance and does not analyze the utterance. In both cases, the request still succeeds with HTTP response code 200.
 
@@ -179,7 +100,7 @@ You pass the method a JSON `ToneChatInput` object with the following format. The
 ```
 {: codeblock}
 
-The following example shows the contents of the <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone-chat.json" download="tone-chat.json">tone-chat.json <img src="../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> file. The file includes a brief exchange between a <code>customer</code> and an <code>agent</code>.
+The following example shows the contents of the <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone-chat.json" download="tone-chat.json">tone-chat.json <img src="../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a> file. The file includes a brief exchange between a `customer` and an `agent`.
 
 ```javascript
 {
@@ -311,52 +232,13 @@ The following output is returned for the [Example request](#exampleRequest). (Th
 
 The service can return scores for the following seven tones.
 
-<table style="width:90%">
-  <caption>Table 2. Customer-engagement tones</caption>
-  <tr>
-    <th style="text-align:left; width:20%">Tone / ID</th>
-    <th style="text-align:left">Description</th>
-  </tr>
-  <tr>
-    <td>Excited<br/><code>excited</code></td>
-    <td>
-      Showing personal enthusiasm and interest
-    </td>
-  </tr>
-  <tr>
-    <td>Frustrated<br/><code>frustrated</code></td>
-    <td>
-      Defined as feeling annoyed and irritable
-    </td>
-  </tr>
-  <tr>
-    <td>Impolite<br/><code>impolite</code></td>
-    <td>
-      Being disrespectful and rude
-    </td>
-  </tr>
-  <tr>
-    <td>Polite<br/><code>polite</code></td>
-    <td>
-      Defined as rational, goal-oriented behavior
-    </td>
-  </tr>
-  <tr>
-    <td>Sad<br/><code>sad</code></td>
-    <td>
-      Regarded as an unpleasant passive emotion
-    </td>
-  </tr>
-  <tr>
-    <td>Satisfied<br/><code>satisfied</code></td>
-    <td>
-      An affective response to perceived service quality
-    </td>
-  </tr>
-  <tr>
-    <td>Sympathetic<br/><code>sympathetic</code></td>
-    <td>
-      An affective mode of understanding that involves emotional resonance
-    </td>
-  </tr>
-</table>
+| Tone / ID | Description |
+|-----------|-------------|
+| Excited<br/>`excited` | Showing personal enthusiasm and interest |
+| Frustrated<br/>`frustrated` | Defined as feeling annoyed and irritable |
+| Impolite<br/>`impolite` | Being disrespectful and rude |
+| Polite<br/>`polite` | Defined as rational, goal-oriented behavior |
+| Sad<br/>`sad` | Regarded as an unpleasant passive emotion |
+| Satisfied<br/>`satisfied` | An affective response to perceived service quality |
+| Sympathetic<br/>`sympathetic` | An affective mode of understanding that involves emotional resonance |
+{: caption="Table 1. Customer-engagement tones"}
