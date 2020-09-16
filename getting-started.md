@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-09-08"
+lastupdated: "2020-09-16"
 
 keywords: tone analyzer, getting started, tutorial
 
@@ -24,7 +24,6 @@ subcollection: tone-analyzer
 {:java: .ph data-hd-programlang='java'}
 {:python: .ph data-hd-programlang='python'}
 {:swift: .ph data-hd-programlang='swift'}
-{:download: .download}
 {:apikey: data-credential-placeholder='apikey'}
 {:url: data-credential-placeholder='url'}
 {:hide-dashboard: .hide-dashboard}
@@ -69,7 +68,7 @@ Omit the braces from the examples. They indicate variable values.
 
 The following commands call the `POST /v3/tone` method to analyze the contents of the file `tone.json`. The file includes a single paragraph of plain text that is written by one person. The examples demonstrate the method's `sentences` query parameters.
 
-1.  Download the sample file <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone.json" download="tone.json">tone.json <img src="../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a>.
+1.  Download the sample file [tone.json](https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone.json){: external}.
 1.  Issue the following command to analyze the tone of the overall content and of each individual sentence.
     -   {: hide-dashboard} Replace `{apikey}` and `{url}` with your information.
     -   Modify `{path_to_file}` to specify the location of the `tone.json` file.
@@ -112,7 +111,7 @@ The interface also offers a `GET /v3/tone` method. The `GET` method provides the
 
 The following command calls the `POST /v3/tone_chat` method to analyze the contents of the file `tone-chat.json`. The file includes a brief exchange of messages between two people, a `customer` and an `agent`.
 
-1.  Download the sample file <a target="_blank" href="https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone-chat.json" download="tone-chat.json">tone-chat.json <img src="../icons/launch-glyph.svg" alt="External link icon" title="External link icon"></a>.
+1.  Download the sample file [tone-chat.json](https://watson-developer-cloud.github.io/doc-tutorial-downloads/tone-analyzer/tone-chat.json){: external}.
 1.  Issue the following command to analyze the tone of the exchange in the sample file.
 
     ```bash
