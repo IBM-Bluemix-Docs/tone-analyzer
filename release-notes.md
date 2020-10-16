@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-09-03"
+lastupdated: "2020-10-16"
 
 subcollection: tone-analyzer
 
@@ -45,7 +45,7 @@ The release notes document the *service version* and *interface version* for eac
 
         The previous public endpoint domain was `watsonplatform.net`.
 
-        For more information about the URLs, see the [API reference](https://{DomainName}/apidocs/tone-analyzer#service-endpoint){: external}.
+        For more information about the URLs, see the [API & SDK reference](https://{DomainName}/apidocs/tone-analyzer#service-endpoint){: external}.
 
         These URLs do not introduce a breaking change. The new URLs work both for your existing service instances and for new instances. The original URLs continue to work on your existing service instances for at least one year (until December 2020).
     - For more information about IAM, see [Authenticating to Watson services](/docs/watson?topic=watson-iam).
@@ -123,7 +123,7 @@ For more information, see the following documentation:
 
 -   To learn which authentication mechanism your service instance uses, view your service credentials by clicking the instance on the [{{site.data.keyword.cloud_notm}} dashboard](https://{DomainName}/resources){: external}.
 -   For more information about using IAM API keys and tokens with Watson services, see [Authenticating with IAM tokens](/docs/watson?topic=watson-iam).
--   For examples that use IAM authentication, see the [API reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
+-   For examples that use IAM authentication, see the [API & SDK reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
 
 ### 11 June 2018
 {: #June2018}

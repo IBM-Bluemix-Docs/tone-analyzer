@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-09-16"
+lastupdated: "2020-10-16"
 
 subcollection: tone-analyzer
 
@@ -27,7 +27,7 @@ subcollection: tone-analyzer
 # Using the customer-engagement endpoint
 {: #utco}
 
-The {{site.data.keyword.toneanalyzershort}} customer-engagement endpoint analyzes the tone of customer service and support conversations. It can help you better understand your interactions with customers and improve your communications in general or for specific customers. For more information about the interface, including the Node.js, Java, and Python SDKs that are available for calling the service, see the [API reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
+The {{site.data.keyword.toneanalyzershort}} customer-engagement endpoint analyzes the tone of customer service and support conversations. It can help you better understand your interactions with customers and improve your communications in general or for specific customers. For more information about the interface, including the Node.js, Java, and Python SDKs that are available for calling the service, see the [API & SDK reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
 {: shortdesc}
 
 Request logging is disabled for the {{site.data.keyword.toneanalyzershort}} service. Regardless of whether you set the `X-Watson-Learning-Opt-Out` request header, the service does not log or retain data from requests and responses.

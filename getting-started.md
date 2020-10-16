@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-09-16"
+lastupdated: "2020-10-16"
 
 keywords: tone analyzer, getting started, tutorial
 
@@ -129,4 +129,4 @@ The service's response indicates the most prevalent tones that are detected for 
 
 -   For more information about the `/v3/tone` method, see [Using the general-purpose endpoint](/docs/tone-analyzer?topic=tone-analyzer-utgpe).
 -   For more information about the `/v3/tone_chat` method, see [Using the customer-engagement endpoint](/docs/tone-analyzer?topic=tone-analyzer-utco).
--   For more information about the methods of the service's interface, see the [API reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
+-   For more information about the methods of the service's interface, see the [API & SDK reference](https://{DomainName}/apidocs/tone-analyzer){: external}.

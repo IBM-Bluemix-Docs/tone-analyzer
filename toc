@@ -35,7 +35,7 @@ Tone Analyzer
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [API reference](https://cloud.ibm.com/apidocs/tone-analyzer)
+    [API & SDK reference](https://cloud.ibm.com/apidocs/tone-analyzer)
     information-security.md
     /watson/watson-using-sdks
     [Watson GitHub repos](https://github.com/watson-developer-cloud/)

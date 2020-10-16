@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-09-16"
+lastupdated: "2020-10-16"
 
 subcollection: tone-analyzer
 
@@ -28,7 +28,7 @@ subcollection: tone-analyzer
 # Using the general-purpose endpoint
 {: #utgpe}
 
-The {{site.data.keyword.toneanalyzershort}} general-purpose endpoint analyzes the tone of written communications, from short email messages to longer documents. It can help you understand the emotional and language tones of your communications. For more information about the interface, including the Node.js, Java, and Python SDKs that are available for calling the service, see the [API reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
+The {{site.data.keyword.toneanalyzershort}} general-purpose endpoint analyzes the tone of written communications, from short email messages to longer documents. It can help you understand the emotional and language tones of your communications. For more information about the interface, including the Node.js, Java, and Python SDKs that are available for calling the service, see the [API & SDK reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
 {: shortdesc}
 
 Request logging is disabled for the {{site.data.keyword.toneanalyzershort}} service. Regardless of whether you set the `X-Watson-Learning-Opt-Out` request header, the service does not log or retain data from requests and responses.

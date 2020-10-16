@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-09-28"
+lastupdated: "2020-10-16"
 
 subcollection: tone-analyzer
 
@@ -42,7 +42,7 @@ To analyze the tone of an individual's text, you pass the input text to the serv
 SDKs are available for the {{site.data.keyword.toneanalyzershort}} service to simplify application development. {{site.data.keyword.ibmwatson}} SDKs are available for many popular programming languages and platforms.
 
 -   For a complete list of SDKs and links to the SDKs on GitHub, see [Using SDKs](/docs/tone-analyzer?topic=watson-using-sdks).
--   For detailed information about all methods of the Node, Java, Python, Ruby, and Go SDKs for the {{site.data.keyword.toneanalyzershort}} service, see the [API reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
+-   For detailed information about all methods of the Node, Java, Python, Ruby, and Go SDKs for the {{site.data.keyword.toneanalyzershort}} service, see the [API & SDK reference](https://{DomainName}/apidocs/tone-analyzer){: external}.
 
 ## Learning more about application development
 {: #learn}
