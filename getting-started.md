@@ -2,11 +2,14 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-10-16"
+lastupdated: "2020-10-23"
 
-keywords: tone analyzer, getting started, tutorial
+keywords: tone analyzer,getting started,tutorial
 
 subcollection: tone-analyzer
+
+content-type: tutorial
+completion-time: 10m
 
 ---
 
@@ -27,9 +30,12 @@ subcollection: tone-analyzer
 {:apikey: data-credential-placeholder='apikey'}
 {:url: data-credential-placeholder='url'}
 {:hide-dashboard: .hide-dashboard}
+{:step: data-tutorial-type='step'}
 
 # Getting started with {{site.data.keyword.toneanalyzershort}}
 {: #gettingStarted}
+{: toc-content-type="tutorial"}
+{: toc-completion-time="10m"}
 
 The {{site.data.keyword.toneanalyzershort}} service analyzes the tone of input content. This tutorial shows commands that analyze different sample content. The examples demonstrate both the general-purpose and the customer-engagement endpoints.
 {: shortdesc}
@@ -60,11 +66,12 @@ This tutorial uses the `curl` command to call methods of the service's HTTP inte
 
 1.  If necessary, install the version of `curl` with SSL enabled for your operating system from [curl.haxx.se](https://curl.haxx.se/){: external}.
 
-Omit the braces from the examples. They indicate variable values.
+Omit the braces (`{ }`) from the examples. They indicate variable values.
 {: tip}
 
-## Step 1: Using the general-purpose endpoint via the POST request method
+## Using the general-purpose endpoint via the POST request method
 {: #generalPurposePost}
+{: step}
 
 The following commands call the `POST /v3/tone` method to analyze the contents of the file `tone.json`. The file includes a single paragraph of plain text that is written by one person. The examples demonstrate the method's `sentences` query parameters.
 
@@ -93,8 +100,9 @@ The following commands call the `POST /v3/tone` method to analyze the contents o
 
 For an example of the method's output, see [Example response](/docs/tone-analyzer?topic=tone-analyzer-utgpe#exampleResponse-tone).
 
-## Step 2: Using the general-purpose endpoint via the GET request method
+## Using the general-purpose endpoint via the GET request method
 {: #generalPurposeGet}
+{: step}
 
 The interface also offers a `GET /v3/tone` method. The `GET` method provides the same functionality and produces the same results as the `POST` method, but you use the method's `text` query parameter to specify the content to be analyzed. The method accepts only plain text input.
 
@@ -106,8 +114,9 @@ The interface also offers a `GET /v3/tone` method. The `GET` method provides the
     ```
     {: pre}
 
-## Step 3: Using the customer-engagement endpoint
+## Using the customer-engagement endpoint
 {: #customerEngagement}
+{: step}
 
 The following command calls the `POST /v3/tone_chat` method to analyze the contents of the file `tone-chat.json`. The file includes a brief exchange of messages between two people, a `customer` and an `agent`.
 
