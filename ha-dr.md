@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-03-19"
+  years: 2019, 2021
+lastupdated: "2021-02-09"
 
 subcollection: tone-analyzer
 
@@ -22,7 +22,7 @@ subcollection: tone-analyzer
 {:python: .ph data-hd-programlang='python'}
 {:swift: .ph data-hd-programlang='swift'}
 
-# High availability and disaster recovery
+# Understanding high availability and disaster recovery for {{site.data.keyword.toneanalyzershort}}
 {: #ha-dr}
 
 The {{site.data.keyword.toneanalyzerfull}} service is highly available within any {{site.data.keyword.cloud_notm}} location. It has no backup and restore requirements for disaster recovery.
