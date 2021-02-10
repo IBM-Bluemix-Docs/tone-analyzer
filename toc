@@ -25,7 +25,6 @@ Tone Analyzer
     /watson/watson-public-private-endpoints
     using-tone.md
     using-tone-chat.md
-    ha-dr.md
 
     {: topicgroup}
     Service background
@@ -36,6 +35,7 @@ Tone Analyzer
 
     {: .navgroup id="reference"}
     [API & SDK reference](https://cloud.ibm.com/apidocs/tone-analyzer)
+    ha-dr.md
     information-security.md
     /watson/watson-using-sdks
     [Watson GitHub repos](https://github.com/watson-developer-cloud/)
